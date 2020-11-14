@@ -1,0 +1,14 @@
+.my-animation {
+  animation: fade 3s steps(90) forwards;
+ -webkit-animation: fade 3s steps(90) forwards;
+  -moz-animation: fade 3s steps(90) forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.0;
+  }
+}
