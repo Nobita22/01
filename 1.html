@@ -1,81 +1,24 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "anim.css"
-      />
 <head>
-<title>title</title>
-
-
-       
-  <style>
-body {background-color: White;}
-h1 {color: red;
-   
-      text-align: center;}
-
-img {
-      max-width: 100%;
-      
-   }
-img1{
-    
-   max-width: 100%;
-     }
-text{
-      colo: red;
-      src= "fade-out.css";
-    }
-<script type = "text/javascript">
-        
-            function getConfirmation() {
-               
-                  document.write ("User wants to continue!");
-               
-            }
-       
-      </script>   
-
-   
-
-  </style>
-</head>  
+<meta charset="utf-8">
+<title>Display popup on page load</title>
+<link rel="stylesheet" href="swc.css">
+</head>
 <body>
-   <script>getConfirmation();</script>
-    
-        
-     
-  <h1>Welcome66</h1>
-  <div class="my-animation">
-   <img src="dog.png">
-  
-   </div>
-   <img1><img src ="butterfly.png"></img1>
-   <!-- Modal -->
-<div class="modal" id="modal-one" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-header">
-             <h2>Modal in CSS?</h2>
- <a href="#modal-one" class="btn-close" aria-hidden="true">×</a>
-
-        </div>
-        <div class="modal-body">
-            <p>One modal example here! :D</p>
-        </div>
-        <div class="modal-footer"> <a href="#modal-one" class="btn">Nice!</a>
-
-        </div>
-    </div>
+<div class="maintext">
+<h2> Main text goes here...</h2>
 </div>
-<div class="wrap"> <a href="#" class="btn btn-big">Modal!</a>
-
+<div id="boxes">
+<div style="top: 50%; left: 50%; display: none;" id="dialog" class="window"> 
+<div id="san">
+<a href="#" class="close agree"><img src="close-icon.png" width="25" style="float:right; margin-right: -25px; margin-top: -20px;"></a>
+<img src="san-web-corner.png" width="450">
 </div>
-    
-   
-  
-
+</div>
+<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+<script src="swc.js"></script>
 </body>
 </html>
