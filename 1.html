@@ -8,12 +8,18 @@
       />
 <head>
 <title>title</title>
+
+
+       
   <style>
 body {background-color: White;}
 h1 {color: red;
    
       text-align: center;}
-    
+function getValue() {
+               var retVal = prompt("Enter your name : ", "your name here");
+               document.write("You have entered : " + retVal);
+            }    
 img {
       max-width: 100%;
       
@@ -32,7 +38,8 @@ text{
   </style>
 </head>  
 <body>
-  <h1>Welcome1</h1>
+   <getValue();/>
+  <h1>Welcome</h1>
   <div class="my-animation">
    <img src="dog.png">
   
