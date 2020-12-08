@@ -20,6 +20,12 @@
   top: 0;
   width: 100%;
 }
+ .content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
   .header {
   padding: 10px 16px;
   background: #555;
@@ -58,7 +64,7 @@ button:hover, a:hover {
   <div class="header" id="myHeader">
   <h2>My Header</h2>
 </div>
-
+<div class="content">
 <h2 style="text-align:center">User Profile Card</h2>
 
 <div class="card">
@@ -66,9 +72,7 @@ button:hover, a:hover {
   <h1>John Doe</h1>
   <p class="title">CEO & Founder, Example</p>
   <p>Harvard University</p>
-  <div style="margin: 24px 0;"></div>
-  
-</div>
+  </div>
 <script>
 window.onscroll = function() {myFunction()};
 
